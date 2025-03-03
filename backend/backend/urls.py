@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from files.views import upload_file, list_files
+from files.ff import ffupload
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("upload/", upload_file),
     path("files/", list_files),
+    path("ffinit/", ffupload),
 ]
