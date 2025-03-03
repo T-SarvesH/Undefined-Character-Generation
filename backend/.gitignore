@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Virtual environment
+venv/
+.venv/
+.env/ # sometimes virtual envs are named .env
+.env/
+.venv-env/
+.venv-env/
+
+# Django specific
+*.log
+*.pot
+*.sqlite3
+local_settings.py
+db.sqlite3 # if you are using sqlite as your main database, do not commit this
+
+# Environments
+.env
+
+# OS generated files
+.DS_Store # Generally not needed on linux, but no harm in keeping
+Thumbs.db # Generally not needed on linux, but no harm in keeping
+*.swp
+
+# Static files (if you are collecting them locally)
+static/
+
+# Media files (if you are collecting them locally)
+media/
+
+# IDE files
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+
+# Other files you might not want to track
+*.bak
+*.orig
+*.dump
