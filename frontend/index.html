@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox Clone</title>
+    <script type="module" src="/src/main.js" defer></script>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <h1>Upload & Download Files</h1>
+
+    <input type="file" id="fileInput" />
+    <button id="uploadBtn">Upload to AWS</button>
+
+    <input type="text" id="fileKey" placeholder="Enter file name to download">
+    <button id="downloadBtn">Download from AWS</button>
+
+    <script type="module" src="/src/upload.js"></script>
+    <script type="module" src="/src/download.js"></script>
+</body>
+</html>
