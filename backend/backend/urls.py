@@ -23,5 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("upload/", upload_file),
     path("files/", list_files),
-    path("ffinit/", ffupload),
+    path("fontfileupload/", ffupload),
 ]

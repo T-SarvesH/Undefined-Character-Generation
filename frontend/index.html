@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropbox Clone</title>
+    <title>Pratika: Character Replacement Tool</title>
     <script type="module" src="/src/main.js" defer></script>
     <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
-    <h1>Pratika: Undefined Character Replacement</h1>
+    <div class="container">
+        <h1>Pratika</h1>
+        <p class="subtitle">Undefined Character Replacement Tool</p>
 
-    <input type="file" id="fileInput" />
-    <button id="uploadBtn">Upload</button>
+        <div class="card">
+            <input type="file" id="fileInput" />
+            <button id="uploadBtn">Upload File</button>
+        </div>
 
-    <input type="text" id="fileKey" placeholder="Enter file name to download">
-    <button id="downloadBtn">Download</button>
+        <div class="card">
+            <input type="text" id="fileKey" placeholder="Enter file name">
+            <button id="downloadBtn">Download File</button>
+        </div>
+
+        <div class="counter-section">
+            <p id="counterDisplay">Count is 0</p>
+            <button id="counterBtn">Increment Counter</button>
+        </div>
+    </div>
 
     <script type="module" src="/src/upload.js"></script>
     <script type="module" src="/src/download.js"></script>

@@ -123,20 +123,24 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+GOOGLE_FONTS_API_KEY = "AIzaSyDBjFrGcYwFX1AegRgV2M2w7EvKvvos-L8"
 
 #Add your AWS credentials here and edit if reqd
 
-AWS_ACCESS_KEY_ID = "YOUR_AWS_ACCESS_KEY"
-AWS_SECRET_ACCESS_KEY = "YOUR_AWS_SECRET_KEY"
-AWS_STORAGE_BUCKET_NAME = "your-bucket-name"
-AWS_S3_REGION_NAME = "us-east-1"  # Change if needed
 
-AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
-AWS_S3_OBJECT_PARAMETERS = {"CacheControl": "max-age=86400"}
+#AWS access to be used later
 
-# Use S3 for media storage
-DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 
-# Media Files URL
-MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/"
+# AWS_ACCESS_KEY_ID = "YOUR_AWS_ACCESS_KEY"
+# AWS_SECRET_ACCESS_KEY = "YOUR_AWS_SECRET_KEY"
+# AWS_STORAGE_BUCKET_NAME = "your-bucket-name"
+# AWS_S3_REGION_NAME = "us-east-1"  # Change if needed
+
+# AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
+# AWS_S3_OBJECT_PARAMETERS = {"CacheControl": "max-age=86400"}
+
+# # Use S3 for media storage
+# DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+
+# # Media Files URL
+# MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/"
